@@ -1,1 +1,8 @@
 <p>This question was submitted on {{question.date}}</p>
+
+<h3>Answers</h3>
+<ul>
+  {{#each model as |answer|}}
+    {{answer-tile answer=answer}}
+  {{/each}}
+</ul>
