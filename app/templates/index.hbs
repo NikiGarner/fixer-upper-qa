@@ -2,6 +2,8 @@
 
 <ul>
   {{#each model as |question|}}
-    <li>Q:{{question.item}} by {{question.author}}</li>
+    {{question-tile question=question}}
   {{/each}}
 </ul>
+
+{{new-question save2="save3"}}
