@@ -30,8 +30,7 @@ var questions = [{
   author: "Earl Cash",
   type: "Show",
   avatar: "https://cdn4.iconfinder.com/data/icons/small-n-flat/24/user-alt-128.png"
-}
-}]
+}];
 
 export default Ember.Route.extend({
   model() {

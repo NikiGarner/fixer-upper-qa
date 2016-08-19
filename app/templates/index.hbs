@@ -1,1 +1,7 @@
 <h1>Fixer Upper Forum</h1>
+
+<ul>
+  {{#each model as |question|}}
+    <li>Q:{{question.item}} by {{question.author}}</li>
+  {{/each}}
+</ul>
