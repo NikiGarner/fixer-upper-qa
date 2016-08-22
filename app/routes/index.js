@@ -2,7 +2,7 @@ import Ember from 'ember';
 
 export default Ember.Route.extend({
   model() {
-    return this.store.findAll('question', 'answer');
+    return this.store.findAll('question');
   },
    actions: {
       save3(params) {

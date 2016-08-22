@@ -2,33 +2,33 @@
   "item": "Which is your favorite home from the show?",
   "author": "Tammy Smith",
   "date": "May 30, 2015",
-  "avatar": "https://cdn4.iconfinder.com/data/icons/small-n-flat/24/user-alt-128.png"
+  "answer": ""
 },{
   "item": "Where does Jojo get her clothes?",
   "author": "Abby Dunn",
   "date": "November 30, 2015",
-  "avatar": "https://cdn4.iconfinder.com/data/icons/small-n-flat/24/user-alt-128.png"
+  "answer": ""
 },{
   "item": "How do you get on Fixer Upper?",
   "author": "Robert Chase",
   "date": "March 24, 2016",
-  "avatar": "https://cdn4.iconfinder.com/data/icons/small-n-flat/24/user-alt-128.png"
+  "answer": ""
 }, {
   "item": "Are any houses from the show for sale?",
   "author": "Nancy Schultz",
   "date": "March 28, 2016",
-  "avatar": "https://cdn4.iconfinder.com/data/icons/small-n-flat/24/user-alt-128.png"
+  "answer": ""
 }, {
   "item": "What do you think about the Airbnb controversy?",
   "author": "Earl Cash",
   "date": "April 10, 2016",
-  "avatar": "https://cdn4.iconfinder.com/data/icons/small-n-flat/24/user-alt-128.png"
+  "answer": ""
   }],
 "answers": [{
-  "item": "I don't know",
-  "author": "Jude Starr"
+  "content": "I don't know",
+  "name": "Jude Starr"
   },{
-  "item": "First comment!",
-  "author": "Jennifer Todd"
+  "content": "First comment!",
+  "name": "Jennifer Todd"
   }]
 }
