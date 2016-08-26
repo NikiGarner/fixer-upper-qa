@@ -13,7 +13,7 @@ export default Ember.Component.extend({
         date: this.get('date'),
         avatar: this.get('avatar')
       };
-      this.get('addNewQuestion', false);
+      this.set('addNewQuestion', false);
       this.sendAction('save2', params);
     }
   }

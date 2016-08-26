@@ -1,12 +1,16 @@
-{{question-detail question=model}}
+<h2>Q: {{model.item}} -- {{model.author}}</h2>
+<hr>
+<p>Question submitted on {{model.date}}</p>
+
+{{question-detail question=model destroyQuestion="destroyQuestion"}}
 {{update-question question=model update="update"}}
 
-<h3>Answers</h3>
-<ul>
-  {{#each model.answers as |answer|}}
-    {{answer.name}} : {{answer.content}}
-    <br>
-  {{/each}}
-</ul>
+
+
+<!--
 
 {{new-answer save2="save3" answer=model}}
+
+{{#each model.answers as |answer|}}
+  {{answer-tile answer=answer}}
+{{/each}} -->
