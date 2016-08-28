@@ -1,7 +1,6 @@
-<!-- <h3>Answers</h3>
-<ul>
-  {{#each model.answers as |answer|}}
-    {{answer.name}} : {{answer.content}}
+
+<li>
+    <p>{{answer.name}} : {{answer.content}}</p>
     <br>
-  {{/each}}
-</ul> -->
+    {{update-answer answer=answer update="update"}}
+</li>

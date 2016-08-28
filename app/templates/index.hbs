@@ -1,7 +1,7 @@
 <h2>Recently Asked Questions</h2>
 <ul>
-  {{#each model as |question|}}
-    {{question-tile question=question}}
+  {{#each model.questions as |question|}}
+    {{question-tile question=question update="update" destroyQuestion="destroyQuestion"}}
   {{/each}}
 </ul>
 

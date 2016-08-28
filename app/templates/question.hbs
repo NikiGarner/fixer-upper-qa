@@ -2,15 +2,17 @@
 <hr>
 <p>Question submitted on {{model.date}}</p>
 
+<!-- {{answer-list answers=model.answers}} -->
+
 {{question-detail question=model destroyQuestion="destroyQuestion"}}
 {{update-question question=model update="update"}}
 
+<ul>
+  {{#each model.answers as |answer|}}
+    {{answer-tile answer=answer}}
+  {{/each}}
+</ul>
 
 
-<!--
 
-{{new-answer save2="save3" answer=model}}
-
-{{#each model.answers as |answer|}}
-  {{answer-tile answer=answer}}
-{{/each}} -->
+{{new-answer save1="save2" question=model}}
