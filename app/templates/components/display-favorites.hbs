@@ -1,0 +1,6 @@
+<h1> Your Favorite Answers:</h1>
+{{#each favoriteList.answers as |answer|}}
+  {{answer.name}} says: {{answer.content}}
+    <button {{action 'remove' answer}}>Remove</button>
+{{/each}}
+<button {{action 'empty'}}>Clear list</button>

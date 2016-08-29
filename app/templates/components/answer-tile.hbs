@@ -3,4 +3,6 @@
     <p>{{answer.name}} : {{answer.content}}</p>
     <br>
     {{update-answer answer=answer update="update"}}
+    <br>
+    <button {{action 'addToFavorites' answer}}>Add to your Favorites</button>
 </li>

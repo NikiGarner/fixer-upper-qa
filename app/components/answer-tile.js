@@ -1,11 +1,12 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
+  favoriteList: Ember.inject.service(),
+
   actions: {
-    delete(answer) {
-      if (confirm('Are you sure you want to delete this answer?')) {
-        this.sendAction('destroyAnswer', answer);
-      }
+    addToFavorites(answer) {
+      this.get('favoriteList').add(answer);
+      this.transitionTo('index');
     },
     update(answer, params){
       Object.keys(params).forEach(function(key){
@@ -15,6 +16,6 @@ export default Ember.Component.extend({
       });
       answer.save();
       this.transitionTo('question', params.question);
-    }
+    },
   }
 });
