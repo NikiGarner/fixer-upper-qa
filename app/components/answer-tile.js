@@ -8,6 +8,10 @@ export default Ember.Component.extend({
       this.get('favoriteList').add(answer);
       this.transitionTo('index');
     },
+    upvote(answer) {
+      this.sendAction('upvote', answer);
+      console.log(upvote);
+    },
     update(answer, params){
       Object.keys(params).forEach(function(key){
         if(params[key]!==undefined){
@@ -16,6 +20,6 @@ export default Ember.Component.extend({
       });
       answer.save();
       this.transitionTo('question', params.question);
-    },
+    }
   }
 });

@@ -8,4 +8,5 @@ export function special(params/*, hash*/) {
   }
 }
 
+
 export default Ember.Helper.helper(special);
