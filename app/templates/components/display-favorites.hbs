@@ -2,5 +2,7 @@
 {{#each favoriteList.answers as |answer|}}
   {{answer.name}} says: {{answer.content}}
     <button {{action 'remove' answer}}>Remove</button>
+  <br>
 {{/each}}
+<br>
 <button {{action 'empty'}}>Clear list</button>
