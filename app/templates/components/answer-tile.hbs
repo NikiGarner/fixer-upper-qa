@@ -1,10 +1,8 @@
 
 <li>
-    <p>{{answer.name}} : {{answer.content}}</p>
+    <p>{{fullAnswer}}</p>
     <br>
     {{update-answer answer=answer update="update"}}
     <br>
-    <p>{{answer.votes}} likes</p>
-    <button {{action 'upvote' answer}}><span class="glyphicon glyphicon-thumbs-up"></span></button>
     <button {{action 'addToFavorites' answer}}>Add to your Favorites</button>
 </li>

@@ -1,16 +1,15 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
+  fullAnswer: Ember.computed('answer.name', 'answer.content', function() {
+    return this.get('answer.name') + ' : ' + this.get('answer.content');
+  }),
   favoriteList: Ember.inject.service(),
 
   actions: {
     addToFavorites(answer) {
       this.get('favoriteList').add(answer);
       this.transitionTo('index');
-    },
-    upvote(answer) {
-      this.sendAction('upvote', answer);
-      console.log(upvote);
     },
     update(answer, params){
       Object.keys(params).forEach(function(key){
