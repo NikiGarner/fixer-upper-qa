@@ -1,7 +1,6 @@
 # Project-name
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+This is a project during the JavaScxript course at Epicodus. The purpose of the project was to create a fourm where people can post questions and answers with the ability to edit each. This also features a popularity service and a favorites helper.
 
 ## Prerequisites
 
